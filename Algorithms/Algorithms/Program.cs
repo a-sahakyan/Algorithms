@@ -12,8 +12,7 @@ namespace Algorithms
             Recursion recursion = new Recursion();
             Arrays array = new Arrays();
             Arithmetic arithmetic = new Arithmetic();
-            arithmetic.PrimeNumbers();
-            //test
+
             Console.ReadKey();
         }
     }
