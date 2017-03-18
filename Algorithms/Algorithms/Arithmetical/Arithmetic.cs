@@ -4,8 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+
 namespace Algorithms
 {
+
     class Arithmetic
     {
         /// <summary>
@@ -48,6 +52,8 @@ namespace Algorithms
 
             return sum;
         }
+
+
 
         /// <summary>
         /// Get Max Value
@@ -146,44 +152,21 @@ namespace Algorithms
         /// </summary>
         public void PrimeNumbers()
         {
+            //A prime number (or a prime) is a natural number greater than 1 
+            //that has no positive divisors other than 1 and itself
             while (true)
             {
-
                 int key = int.Parse(Console.ReadLine());
-                if (key == 1)
-                {
-                    Console.WriteLine($"{key} is not prime");
-                }
-                else if (key == 2)
-                {
-                    Console.WriteLine($"{key} is prime");
+                double result = Math.Sqrt(key);
 
-                }
-
-
-                //prime numbers only can devide on 1 and on your number (key). 1 is exception.
-
-                if (key % 2 == 0 && key != 2)
-                {
-                    Console.WriteLine($"{key} is not prime");
-                }
-
-                else
-                {
-                    for (int i = 3; i <= key; i = i + 2)
+                    if ((key%2==0 && key!=2) || (key % 3 == 0 && key != 3)|| (key%5==0 && key!=5) || (key%7==0 && key!=7) || (result%1==0))
                     {
-                        if (key % i == 0 && key != 3)
-                        {
-                            Console.WriteLine($"{key} is not prime");
-                            break;
-                        }
-                        else
-                        {
-                            Console.WriteLine($"{key} is prime");
-                            break;
-                        }
+                        Console.WriteLine($"{key} is not prime");
                     }
-                }
+                    else
+                    {
+                        Console.WriteLine($"{key} is prime");
+                    }
             }
         }
 
@@ -208,6 +191,18 @@ namespace Algorithms
             foreach (var item in arr)
             {
                 Console.WriteLine(item);
+            }
+        }
+
+        public void Test()
+        {
+            if (2 % 2 == 0)
+            {
+                Console.WriteLine("hjey");
+            }
+            else
+            {
+                Console.WriteLine("aaa");
             }
         }
     }
