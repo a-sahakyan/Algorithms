@@ -13,7 +13,7 @@ namespace Algorithms
             Arrays array = new Arrays();
             Arithmetic arithmetic = new Arithmetic();
             Sortable sort = new Sortable();
-            sort.SortArray();
+
 
             Console.ReadKey();
         }

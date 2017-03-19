@@ -9,7 +9,7 @@ namespace Algorithms
     public class Recursion
     {
         /// <summary>
-        /// Найти максимальное число
+        /// Get Max value
         /// </summary>
         /// <returns></returns>
         public int Max()
@@ -24,21 +24,24 @@ namespace Algorithms
         }
 
 
-        #region  Вывести члены  последовательности с нечетными номерами
-        public void F5()
+        /// <summary>
+        /// Get odd numbers
+        /// </summary>
+        public void GetOdd()
         {
             int i = int.Parse(Console.ReadLine());
             if (i > 0)
             {
                 Console.WriteLine(i);
                 Console.ReadLine();
-                F5();
+                GetOdd();
             }
         }
-        #endregion
 
-        #region Вывести нечетные числа последовательности
-        public void F4()
+        /// <summary>
+        /// Get Odd numbers
+        /// </summary>
+        public void Odd()
         {
             int a = int.Parse(Console.ReadLine());
 
@@ -47,18 +50,17 @@ namespace Algorithms
                 if (a % 2 == 1)
                 {
                     Console.WriteLine(a);
-                    F4();
+                    Odd();
                 }
                 else
                 {
-                    F4();
+                    Odd();
                 }
             }
 
         }
-        #endregion 
 
-        #region Палиндром !!!!!!!!!!
+        #region GetPalindrome
         static int i = 0;
         public bool Polindrom(string s)
         {
@@ -81,56 +83,46 @@ namespace Algorithms
         #endregion
 
 
-        #region Цифры числа слева направо
-        public string F2(int i)
+        /// <summary>
+        /// Get numbers from left to right
+        /// </summary>
+        public string FromLeftToRight(int i)
         {
             if (i < 10)
             {
                 return i.ToString();
             }
-            return F2(i / 10) + " " + i % 10;
+            return FromLeftToRight(i / 10) + " " + i % 10;
 
         }
-        #endregion
 
-
-        #region Цифры числа справа налево
-        public int F1(int i)
+        /// <summary>
+        /// Get numbers from right to left
+        /// </summary>
+        public int FromRightToLeft(int i)
         {
             if (i < 10)
             {
                 return i;
             }
             Console.WriteLine(i % 10);
-            return F1(i / 10);
+            return FromRightToLeft(i / 10);
         }
-        #endregion
 
-        #region Дано натуральное число N. Вычислите сумму его цифр.
-        public int F(int i)
+        /// <summary>
+        /// Calculate number
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        public int CalculateNumber(int i)
         {
             if (i < 10)
             {
                 return i;
             }
-            return i % 10 + F(i / 10);
+            return i % 10 + CalculateNumber(i / 10);
         }
-        #endregion
 
-        #region LoopImitation1
-        public void LoopImitation1(int i, int n)
-        {
-            Console.WriteLine(i);
-            if (i < n & i % 2 == 0)
-            {
-                LoopImitation1(i + 1, n);
-            }
-            Console.WriteLine(i);
-
-        }
-        #endregion
-
-        #region LoopImitation
         public void LoopImitation(int i, int n)
         {
             if (i == n)
@@ -144,27 +136,33 @@ namespace Algorithms
                 Console.WriteLine(i);//n-1,0
 
             }
+        }
+
+        public void LoopImitation2(int i, int n)
+        {
+            Console.WriteLine(i);
+            if (i < n & i % 2 == 0)
+            {
+                LoopImitation2(i + 1, n);
+            }
+            Console.WriteLine(i);
 
         }
-        #endregion
 
-        #region От A до B
-        public string A_B(int a, int b)
+        public string FromAToB(int a, int b)
         {
             return ((char)65).ToString();
         }
-        #endregion
 
-        #region Дано натуральное число n. Выведите все числа от 1 до n.
-        public string From1ToN(int n)
+        /// <summary>
+        /// Get all numbers from 1 to n.
+        /// </summary>
+        public string GetFromOneToN(int n)
         {
             if (n == 0) return "0";
             if (n == 1) return "1";
-            return From1ToN(n - 1) + " " + n;
+            return GetFromOneToN(n - 1) + " " + n;
         }
-        #endregion
-
-        #region Factorial
 
         public int Factorial(int n)
         {
@@ -174,8 +172,6 @@ namespace Algorithms
             }
             return n * Factorial(n - 1);
         }
-
-        #endregion
 
         #region Sum
         List<int> list = new List<int>() { 1, 2, 3, 4, 5 };

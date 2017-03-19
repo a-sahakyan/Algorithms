@@ -29,7 +29,6 @@ namespace Algorithms
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }
