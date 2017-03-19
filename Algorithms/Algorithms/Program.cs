@@ -12,6 +12,8 @@ namespace Algorithms
             Recursion recursion = new Recursion();
             Arrays array = new Arrays();
             Arithmetic arithmetic = new Arithmetic();
+            Sortable sort = new Sortable();
+            sort.SortArray();
 
             Console.ReadKey();
         }
