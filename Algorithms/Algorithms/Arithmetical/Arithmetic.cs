@@ -194,15 +194,86 @@ namespace Algorithms
             }
         }
 
-        public void Test()
+        /// <summary>
+        /// Get max and min values from List
+        /// </summary>
+        public void MaxMinValues()
         {
-            if (2 % 2 == 0)
+            List<int> list = new List<int>() { 1, 2, 3, 4, 56, 4, 5, 78, 9, 6, -2 };
+
+            int max = 0;
+            int min = list[0];
+            for (int i = 0; i < list.Count; i++)
             {
-                Console.WriteLine("hjey");
+                if (max < list[i])
+                {
+                    max = list[i];
+                }
+                else if (min > list[i])
+                {
+                    min = list[i];
+                }
             }
-            else
+
+            Console.WriteLine(max);
+            Console.WriteLine(min);
+        }
+
+        /// <summary>
+        /// check whether an element occurs in a list.
+        /// </summary>
+        public void CheckElement()
+        {
+            while (true)
             {
-                Console.WriteLine("aaa");
+                List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                int key = int.Parse(Console.ReadLine());
+
+                int i = 0;
+                while (i < list.Count)
+                {
+                    if (key == list[i])
+                    {
+                        Console.WriteLine(true.ToString());
+                        break;
+                    }
+                    i++;
+                }
+
+
+                if (i == list.Count)
+                {
+                    Console.WriteLine(false.ToString());
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// Check if word is palindrome
+        /// <para>A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward</para>
+        /// </summary>
+        public void PalindromeString()
+        {
+            while (true)
+            {
+                string word = Console.ReadLine();
+                bool flag = false;
+
+                for (int i = 0; i < word.Length; i++)
+                {
+                    if (word[i] == word[word.Length - i - 1])
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+
+                Console.WriteLine(flag);
             }
         }
     }

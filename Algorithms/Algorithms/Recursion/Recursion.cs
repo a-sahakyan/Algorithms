@@ -176,5 +176,22 @@ namespace Algorithms
         }
 
         #endregion
+
+        #region Sum
+        List<int> list = new List<int>() { 1, 2, 3, 4, 5 };
+        int sum = 0;
+        int k = 0;
+        public int RecursionSum()
+        {
+            if (k < list.Count)
+            {
+                sum += list[k];
+                k++;
+                RecursionSum();
+            }
+
+            return sum;
+        }
+        #endregion
     }
 }
