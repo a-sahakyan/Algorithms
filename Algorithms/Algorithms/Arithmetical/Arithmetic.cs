@@ -276,5 +276,30 @@ namespace Algorithms
                 Console.WriteLine(flag);
             }
         }
+
+        /// <summary>
+        /// First 15 Fibonacci numbers.
+        /// </summary>
+        public void Fibonacci()
+        {
+            List<int> list = new List<int>() { };
+            for (int i = 0; i < 15; i++)
+            {
+                if (i == 0 || i == 1)
+                {
+                    list.Add(i);
+                }
+                else
+                {
+
+                    list.Add(list[i - 1] + list[i - 2]);
+                }
+            }
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }

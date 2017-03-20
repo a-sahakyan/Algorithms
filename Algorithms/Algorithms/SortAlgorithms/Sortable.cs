@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
-    class Sortable
+   static class Sortable
     {
-        public void SortArray()
+        public static void BubbleSort()
         {
             int[] arr = new int[] { 2, 5, 6, 8, 8, 1, 4, 7, 9, 3 };
 
