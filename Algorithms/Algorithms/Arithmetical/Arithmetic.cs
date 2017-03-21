@@ -53,8 +53,6 @@ namespace Algorithms
             return sum;
         }
 
-
-
         /// <summary>
         /// Get Max Value
         /// </summary>
@@ -217,37 +215,7 @@ namespace Algorithms
 
             Console.WriteLine(max);
             Console.WriteLine(min);
-        }
-
-        /// <summary>
-        /// check whether an element occurs in a list.
-        /// </summary>
-        public void CheckElement()
-        {
-            while (true)
-            {
-                List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-                int key = int.Parse(Console.ReadLine());
-
-                int i = 0;
-                while (i < list.Count)
-                {
-                    if (key == list[i])
-                    {
-                        Console.WriteLine(true.ToString());
-                        break;
-                    }
-                    i++;
-                }
-
-
-                if (i == list.Count)
-                {
-                    Console.WriteLine(false.ToString());
-                }
-            }
-
-        }
+        }    
 
         /// <summary>
         /// Check if word is palindrome
