@@ -137,7 +137,7 @@ namespace Algorithms
         /// </summary>
         public void PigLatin()
         {
-            List<string> list = new List<string>() { "pig", "latin", "happy", "duck", "too" };
+            List<string> list = new List<string>() { "smmmile", "pig", "latin", "eat", "happy", "duck", "too" };
 
             for (int i = 0; i < list.Count; i++)
             {
@@ -152,15 +152,40 @@ namespace Algorithms
                 {
                     if ((listChar[k] == 'a' && flag == true) || (listChar[k] == 'e' && flag == true) || (listChar[k] == 'i' && flag == true) || (listChar[k] == 'o' && flag == true) || (listChar[k] == 'u' && flag == true) || (listChar[k] == 'y' && flag == true))
                     {
-                        listChar.Add(listChar[k - 1]);
-                        listChar.RemoveAt(k - 1);
-                        flag = false;
+                        if (listChar[0] == 'a' || listChar[0] == 'e' || listChar[0] == 'i' || listChar[0] == 'i' || listChar[0] == 'o' || listChar[0] == 'u' || listChar[0] == 'y')
+                        {
+                            Console.WriteLine($"{list[i]}" + "way");
+                            break;
+                        }
+                        else
+                        {
+                            int index = k;
+                            List<int> allIndexValues = new List<int>() { };
+
+                            while (index-- > 0)
+                            {
+                                allIndexValues.Add(index);
+                            }
+
+                            for (int y = allIndexValues.Count - 1; y >= 0; y--)
+                            {
+                                listChar.Add(listChar[allIndexValues[y]]);
+                            }
+
+                            for (int l = 0; l < k; l++)
+                            {
+                                listChar.RemoveAt(0);
+                            }
+
+                            flag = false;
+                        }
                     }
+
                     if (k == listChar.Count - 1)
                     {
                         for (int j = 0; j < listChar.Count; j++)
                         {
-                            if (listChar[j] == listChar[listChar.Count - 1])
+                            if (j == listChar.Count - 1)
                             {
                                 Console.Write(listChar[j] + "ay");
                             }
@@ -174,5 +199,6 @@ namespace Algorithms
                 }
             }
         }
+
     }
 }
