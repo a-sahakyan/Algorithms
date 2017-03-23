@@ -130,5 +130,49 @@ namespace Algorithms
                 rowIndex = rowIndex < list.Count - 1 && i != 0 ? rowIndex + 1 : rowIndex;
             }
         }
+
+        /// <summary>
+        /// English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’.
+        /// <para>Pig Latin is a language game in which words in English are altered.</para>
+        /// </summary>
+        public void PigLatin()
+        {
+            List<string> list = new List<string>() { "pig", "latin", "happy", "duck", "too" };
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                bool flag = true;
+
+                List<char> listChar = new List<char>() { };
+                foreach (var item in list[i])
+                {
+                    listChar.Add(item);
+                }
+                for (int k = 0; k < listChar.Count; k++)
+                {
+                    if ((listChar[k] == 'a' && flag == true) || (listChar[k] == 'e' && flag == true) || (listChar[k] == 'i' && flag == true) || (listChar[k] == 'o' && flag == true) || (listChar[k] == 'u' && flag == true) || (listChar[k] == 'y' && flag == true))
+                    {
+                        listChar.Add(listChar[k - 1]);
+                        listChar.RemoveAt(k - 1);
+                        flag = false;
+                    }
+                    if (k == listChar.Count - 1)
+                    {
+                        for (int j = 0; j < listChar.Count; j++)
+                        {
+                            if (listChar[j] == listChar[listChar.Count - 1])
+                            {
+                                Console.Write(listChar[j] + "ay");
+                            }
+                            else
+                            {
+                                Console.Write(listChar[j]);
+                            }
+                        }
+                        Console.WriteLine();
+                    }
+                }
+            }
+        }
     }
 }
