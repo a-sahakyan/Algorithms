@@ -94,7 +94,7 @@ namespace Algorithms
         {
             Random rnd = new Random();
             int count = 0;
-            Console.WriteLine("enter quantity of jagged array");
+            Console.WriteLine("enter quantity of jugged array");
             int n = int.Parse(Console.ReadLine());
             char[][] arr = new char[n][];
 
@@ -175,7 +175,7 @@ namespace Algorithms
             }
         }
 
-        public void JaggedColors()
+        public void JuggedColors()
         {
             Console.WriteLine("enter first dimension");
             int n = int.Parse(Console.ReadLine());
@@ -183,8 +183,6 @@ namespace Algorithms
             int m = int.Parse(Console.ReadLine());
 
             string[,] arr = new string[n, m];
-
-
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
