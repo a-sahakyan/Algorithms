@@ -157,14 +157,14 @@ namespace Algorithms
                 int key = int.Parse(Console.ReadLine());
                 double result = Math.Sqrt(key);
 
-                    if ((key%2==0 && key!=2) || (key % 3 == 0 && key != 3)|| (key%5==0 && key!=5) || (key%7==0 && key!=7) || (result%1==0))
-                    {
-                        Console.WriteLine($"{key} is not prime");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{key} is prime");
-                    }
+                if ((key % 2 == 0 && key != 2) || (key % 3 == 0 && key != 3) || (key % 5 == 0 && key != 5) || (key % 7 == 0 && key != 7) || (result % 1 == 0))
+                {
+                    Console.WriteLine($"{key} is not prime");
+                }
+                else
+                {
+                    Console.WriteLine($"{key} is prime");
+                }
             }
         }
 
@@ -215,7 +215,7 @@ namespace Algorithms
 
             Console.WriteLine(max);
             Console.WriteLine(min);
-        }    
+        }
 
         /// <summary>
         /// Check if word is palindrome
@@ -269,5 +269,37 @@ namespace Algorithms
                 Console.WriteLine(item);
             }
         }
+
+        /// <summary>
+        /// The program finds those subsets whose sum is zero
+        /// </summary>
+        public void SubsetsSum()
+        {
+            int[] arr = new int[] { 3, 1, -7, 35, 22 };
+            int sum = 0;
+            int subsets = 1;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int subsetSum = 0;
+                int subsetIndex = i;
+                int jIndex = i + 2;
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (j < arr.Length - 1)
+                    {
+                        sum = arr[i] + arr[jIndex++];
+                    }
+                    subsetSum += arr[subsetIndex++];
+
+                    if (sum == 0 || subsetSum == 0)
+                    {
+                        subsets++;
+                    }
+                }
+            }
+
+            Console.WriteLine(subsets >= 2 ? $"matches count:{--subsets}" : "None match");
+        }
     }
 }
+

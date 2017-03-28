@@ -45,12 +45,12 @@
   <ItemGroup>
     <Compile Include="Arithmetical\Arithmetic.cs" />
     <Compile Include="Arrays\Arrays.cs" />
+    <Compile Include="Enums\EnumSeries.cs" />
     <Compile Include="Lists\ListSeries.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion\Recursion.cs" />
     <Compile Include="SortAlgorithms\Sortable.cs" />
-	<Compile Include="Enums\EnumSeries.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
