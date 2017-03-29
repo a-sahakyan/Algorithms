@@ -300,6 +300,29 @@ namespace Algorithms
 
             Console.WriteLine(subsets >= 2 ? $"matches count:{--subsets}" : "None match");
         }
+
+        /// <summary>
+        ///  checks whether a given number is prime or not.
+        /// </summary>
+        public void IsPrime()
+        {
+            while (true)
+            {
+                Console.Write("Enter a positive number: ");
+                int num = int.Parse(Console.ReadLine());
+                int divide = 2;
+                bool isPrime = true;
+                while (divide < num)
+                {
+                    if (num % divide == 0)
+                    {
+                        isPrime = false;
+                    }
+                    divide++;
+                }
+                Console.WriteLine($"prime: {isPrime}");
+            }
+        }
     }
 }
 
