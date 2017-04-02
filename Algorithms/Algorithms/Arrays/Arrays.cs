@@ -196,5 +196,254 @@ namespace Algorithms
                 }
             }
         }
+
+        /// <summary>
+        /// prints a matrix of numbers
+        /// </summary>
+        public void MatrixOfNumbers()
+        {
+            Console.Write("dimension: ");
+            int num = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = i + 1; j <= num + i; j++)
+                {
+                    Console.Write(j);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public void SpiralMatrix()
+        {
+            Console.Write("enter number of dimensions: ");
+            int n = int.Parse(Console.ReadLine());
+            int[,] matrix = new int[n, n];
+
+            int rows = 0;
+            int cols = 0;
+            int step = 1;
+            for (int nums = 1; nums <= matrix.Length; nums++)
+            {
+                matrix[rows, cols] = nums;
+
+                if (step == 1)
+                {
+                    if (cols < n - 1 && matrix[rows, cols + 1] == 0)
+                    {
+                        cols++;
+
+                    }
+                    else
+                    {
+                        step = step >= 4 ? 1 : step + 1;
+                    }
+                }
+                if (step == 2)
+                {
+                    if (rows < n - 1 && matrix[rows + 1, cols] == 0)
+                    {
+                        rows++;
+                    }
+                    else
+                    {
+                        step = step >= 4 ? 1 : step + 1;
+                    }
+                }
+                if (step == 3)
+                {
+                    if (cols > 0 && matrix[rows, cols - 1] == 0)
+                    {
+                        cols--;
+                    }
+                    else
+                    {
+                        step = step >= 4 ? 1 : step + 1;
+                    }
+                }
+
+                if (step == 4)
+                {
+                    if (matrix[rows - 1, cols] == 0 && rows > 0)
+                    {
+                        rows--;
+                    }
+                    else
+                    {
+                        step = step >= 4 ? 1 : step + 1;
+                        if (nums != matrix.Length)
+                        {
+                            nums--;
+                        }
+                    }
+
+                }
+            }
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write(matrix[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        #region Alphabetical order
+        public char[] AlphabeticalOrder()
+        {
+            Console.Write("count of chars: ");
+            int count = int.Parse(Console.ReadLine());
+            char[] chars = new char[count];
+            for (int i = 0; i < chars.Length; i++)
+            {
+                Console.Write("add one character: ");
+                chars[i] = char.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < chars.Length; i++)
+            {
+                for (int j = i + 1; j < chars.Length; j++)
+                {
+                    if (chars[i] > chars[j])
+                    {
+                        char temp = chars[j];
+                        chars[j] = chars[i];
+                        chars[i] = temp;
+
+                    }
+                }
+            }
+
+            string[] arr = new string[] { "please wait", "lucky guy", "patient", "wait just wait", "maybe coffee?" };
+            Random rnd = new Random();
+
+            for (int index = 0; index < arr.Length; index++)
+            {
+                int strIndex = rnd.Next(0, arr.Length);
+                Console.Write(arr[strIndex]);
+                Thread.Sleep(1500);
+                ClearLastLine();
+
+            }
+            Console.WriteLine("ordering...");
+            Thread.Sleep(3000);
+            return chars;
+        }
+        public static void ClearLastLine()
+        {
+            Console.SetCursorPosition(0, Console.CursorTop);
+            Console.Write(new string(' ', Console.BufferWidth));
+            Console.SetCursorPosition(0, Console.CursorTop - 1);
+        }
+        #endregion
+
+        public void MaximalConsecutiveSequence()
+        {
+            int[] arr = new int[] { 1, 1, 1, 1, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 1 };
+            List<string> list = new List<string>() { };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int count = 1;
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[i] == arr[j])
+                    {
+                        count++;
+                        i++;
+
+                    }
+                    else if (count >= 2)
+                    {
+                        list.Add($"{arr[i]} count: {count}");
+                        count = 1;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            char[] s = { ' ' };
+            string[] s1;
+            int p = 0;
+            List<int> maxCount = new List<int>() { };
+            for (int i = 0; i < list.Count; i++)
+            {
+                s1 = list[i].Split(s, StringSplitOptions.RemoveEmptyEntries);
+
+                int num = 0;
+                bool parsed = int.TryParse(s1[2], out num);
+                if (parsed == true)
+                {
+                    maxCount.Add(num);
+                }
+            }
+
+            int maxValue = 0;
+            int countValue = -1;
+            for (int i = 0; i < maxCount.Count; i++)
+            {
+                if (maxValue < maxCount[i])
+                {
+                    maxValue = maxCount[i];
+                    countValue++;
+                }
+            }
+
+            Console.WriteLine(list[countValue]);
+        }
+
+        public void MaximalSequenceOfIncreasingIntegers()
+        {
+            int[] arr = new int[] { 3, 2, 3, 4, 5, 2, 1, 2, 3, 4, 5, 6, 7, 2, 4 };
+            List<List<int>> jugged = new List<List<int>>();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                jugged.Add(new List<int>());
+            }
+
+            int juggedIndex = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i != 0)
+                {
+                    if (arr[i] == arr[i + 1] - 1 || arr[i] == arr[i - 1] + 1)
+                    {
+                        jugged[juggedIndex].Add(arr[i]);
+
+                    }
+                    else
+                    {
+                        juggedIndex++;
+                    }
+                    if (i == arr.Length - 2)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            int maxLength = 0;
+            int indexCount = -1;
+            for (int i = 0; i < jugged.Count; i++)
+            {
+                if (jugged[i].Count > maxLength)
+                {
+                    maxLength = jugged[i].Count;
+                    indexCount++;
+                }
+            }
+            Console.Write($"Best elements");
+            for (int j = 0; j < jugged[indexCount].Count; j++)
+            {
+                Console.Write($" {jugged[indexCount][j]}  ");
+            }
+            Console.Write($"count: {maxLength}");
+        }
+
     }
 }

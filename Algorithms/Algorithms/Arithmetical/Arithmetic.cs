@@ -311,8 +311,14 @@ namespace Algorithms
                 Console.Write("Enter a positive number: ");
                 int num = int.Parse(Console.ReadLine());
                 int divide = 2;
+                int maxDivide = (int)Math.Sqrt(num);
                 bool isPrime = true;
-                while (divide < num)
+                if (num == 1)
+                {
+                    isPrime = false;
+                }
+
+                while (divide <= maxDivide)
                 {
                     if (num % divide == 0)
                     {
@@ -320,6 +326,7 @@ namespace Algorithms
                     }
                     divide++;
                 }
+
                 Console.WriteLine($"prime: {isPrime}");
             }
         }
