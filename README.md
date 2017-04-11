@@ -1,7 +1,7 @@
 # Useful Algorithms in c#                                                        
 
 An algorithm is a set of instructions designed to perform a specific task. This can be a simple process, such as multiplying two numbers, or a complex operation, such as playing a compressed video file. Search engines use proprietary algorithms to display the most relevant results from their search index for specific queries.
-<img src="https://github.com/SahakyanGit/Test/blob/master/combine-algorithms.png" align="right" />
+<img src="https://github.com/SahakyanGit/SahakyanGit/blob/master/combine-algorithms.png" align="right" />
 
 In computer programming, algorithms are often created as functions. These functions serve as small programs that can be referenced by a larger program. For example, an image viewing application may include a library of functions that each use a custom algorithm to render different image file formats. An image editing program may contain algorithms designed to process image data. Examples of image processing algorithms include cropping, resizing, sharpening, blurring, red-eye reduction, and color enhancement.
 
