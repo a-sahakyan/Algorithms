@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Enums
 {
-    class EnumSeries
+    class WeekDay
     {
-        public void WeekDay()
+        public void Days()
         {
             while (true)
             {

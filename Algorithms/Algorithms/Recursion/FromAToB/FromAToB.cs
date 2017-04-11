@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
+namespace Algorithms.Recursion.FromAToB
 {
-    class Program
+    class FromAToB
     {
-        static void Main(string[] args)
+        public string FATB(int a, int b)
         {
-
-            Console.ReadKey();
+            return ((char)65).ToString();
         }
     }
 }
