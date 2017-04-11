@@ -8,17 +8,17 @@ In computer programming, algorithms are often created as functions. These functi
 In many cases, there are multiple ways to perform a specific operation within a software program. Therefore, programmers usually seek to create the most efficient algorithms possible. By using highly-efficient algorithms, developers can ensure their programs run as fast as possible and use minimal system resources. Of course, not all algorithms are created perfectly the first time. Therefore, developers often improve existing algorithms and include them in future software updates. When you see a new version of a software program that has been "optimized" or has "faster performance," it most means the new version includes more efficient algorithms.
 
 
-[Arithmetical](https://github.com/SahakyanGit/Algorithms/blob/master/Algorithms/Algorithms/Arithmetical/Arithmetic.cs)
+[Arithmetical](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Arithmetical)
 
-[Arrays](https://github.com/SahakyanGit/Algorithms/blob/master/Algorithms/Algorithms/Arrays/Arrays.cs)
+[Arrays](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Arrays)
 
-[Enums](https://github.com/SahakyanGit/Algorithms/blob/master/Algorithms/Algorithms/Enums/EnumSeries.cs)
+[Enums](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Enums/WeekDay)
 
-[Lists](https://github.com/SahakyanGit/Algorithms/blob/master/Algorithms/Algorithms/Lists/ListSeries.cs)
+[Lists](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Lists)
 
-[Recursion](https://github.com/SahakyanGit/Algorithms/blob/master/Algorithms/Algorithms/Recursion/Recursion.cs)
+[Recursion](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Recursion)
 
-[SortAlgorithms](https://github.com/SahakyanGit/Algorithms/blob/master/Algorithms/Algorithms/SortAlgorithms/Sortable.cs)
+[SortAlgorithms](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/SortAlgorithms)
 
 # Updates will be soon.
 
