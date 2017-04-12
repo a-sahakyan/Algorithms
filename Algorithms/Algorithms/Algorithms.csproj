@@ -61,6 +61,7 @@
     <Compile Include="Arrays\Duplicates2\Duplicates2.cs" />
     <Compile Include="Arrays\Duplicates\Duplicates.cs" />
     <Compile Include="Arrays\FindDuplicates\FindDuplicates.cs" />
+    <Compile Include="Arrays\IndicatesLetters\IndicatesLetters.cs" />
     <Compile Include="Arrays\JaggedColors\JaggedColors.cs" />
     <Compile Include="Arrays\MatrixOfNumbers\MatrixOfNumbers.cs" />
     <Compile Include="Arrays\MaximalConsecutiveSequence\MaximalConsecutiveSequence.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Recursion\Odd\Odd.cs" />
     <Compile Include="Recursion\Palindrome\Palindrome.cs" />
     <Compile Include="Recursion\Sum\Sum.cs" />
+    <Compile Include="SortAlgorithms\BinarySearcher\BinarySearcher.cs" />
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
     <Compile Include="SortAlgorithms\SelectionSorter\SelectionSorter.cs" />
   </ItemGroup>
