@@ -16,22 +16,22 @@ namespace Algorithms.SortAlgorithms.BinarySearcher
         /// </summary>
         /// <param name="a">Sorted ascending array of type int []</param>
         /// <param name="x">The desired element.</param>
-        private static int? BinarySearch(int[] a, int x)
+        public static int? BinarySearch(int[] a, int x)
         {
-            // Проверить, имеет ли смыл вообще выполнять поиск:
-            // - если длина массива равна нулю - искать нечего;
-            // - если искомый элемент меньше первого элемента массива, значит, его в массиве нет;
-            // - если искомый элемент больше последнего элемента массива, значит, его в массиве нет.
+            // Check if it makes sense to do a search.
+            // If the length of the array is zero, there is nothing to look for.
+            // If the required element is smaller than the first element of the array, then it does not exist in the array.
+            // If the required element is greater than the last element of the array, then it does not exist in the array.
             if ((a.Length == 0) || (x < a[0]) || (x > a[a.Length - 1]))
                 return null;
 
-            // Приступить к поиску.
-            // Номер первого элемента в массиве.
+            // Proceed to search.
+            // The number of the first element in the array.
             int first = 0;
-            // Номер элемента массива, СЛЕДУЮЩЕГО за последним
+            // length of the array
             int last = a.Length;
 
-            // Если просматриваемый участок не пуст, first < last
+            // If the previewed area is not empty, first < last
             while (first < last)
             {
                 int mid = first + (last - first) / 2;
@@ -42,7 +42,7 @@ namespace Algorithms.SortAlgorithms.BinarySearcher
                     first = mid + 1;
             }
 
-            // Теперь last может указывать на искомый элемент массива.
+            // Now last can point to the desired element of the array.
             if (a[last] == x)
                 return last;
             else
