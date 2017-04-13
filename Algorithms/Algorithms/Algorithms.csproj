@@ -77,6 +77,7 @@
     <Compile Include="Lists\ConvertableList\ConvertableList.cs" />
     <Compile Include="Lists\PigLatin\PigLatin.cs" />
     <Compile Include="Lists\RectangularFrame\RectangularFrame.cs" />
+    <Compile Include="Lists\RemoveMinimal\RemoveMinimal.cs" />
     <Compile Include="Lists\RotateElements\RotateElements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
