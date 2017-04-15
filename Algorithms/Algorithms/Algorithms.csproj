@@ -80,6 +80,7 @@
     <Compile Include="Lists\RemoveMinimal\RemoveMinimal.cs" />
     <Compile Include="Lists\RotateElements\RotateElements.cs" />
     <Compile Include="Numeral\ConvertToBinary\ConvertToBinary.cs" />
+    <Compile Include="Numeral\ConvertToDecimal\ConvertToDecimal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion\Calculate\Calculate.cs" />
