@@ -16,7 +16,7 @@ In many cases, there are multiple ways to perform a specific operation within a 
 
 [Lists](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Lists)
 
-[Numeral](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Numeral/ConvertToBinary)
+[Numeral](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Numeral)
 
 [Recursion](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Recursion)
 
