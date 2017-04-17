@@ -89,6 +89,7 @@
     <Compile Include="Recursion\Fibonacci\Fibonacci.cs" />
     <Compile Include="Recursion\FromAToB\FromAToB.cs" />
     <Compile Include="Recursion\FromLeftToRight\FromLeftToRight.cs" />
+    <Compile Include="Recursion\FromOneToN2\FromOneToN2.cs" />
     <Compile Include="Recursion\FromOneToN\FromOneToN.cs" />
     <Compile Include="Recursion\FromRightToLeft\FromRightToLeft.cs" />
     <Compile Include="Recursion\LoopImitation2\LoopImitation2.cs" />
