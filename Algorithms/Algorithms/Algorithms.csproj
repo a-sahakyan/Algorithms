@@ -97,6 +97,7 @@
     <Compile Include="Recursion\Odd2\Odd2.cs" />
     <Compile Include="Recursion\Odd\Odd.cs" />
     <Compile Include="Recursion\Palindrome\Palindrome.cs" />
+    <Compile Include="Recursion\Sum2\Sum2.cs" />
     <Compile Include="Recursion\Sum\Sum.cs" />
     <Compile Include="SortAlgorithms\BinarySearcher\BinarySearcher.cs" />
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
