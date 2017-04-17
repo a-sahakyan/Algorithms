@@ -51,7 +51,6 @@
     <Compile Include="Arithmetical\MultiplicationTable\MultiplicationTable.cs" />
     <Compile Include="Arithmetical\Palindrome\Palindrome.cs" />
     <Compile Include="Arithmetical\Prime\Prime.cs" />
-    <Compile Include="Arithmetical\ReverseArray\ReverseArray.cs" />
     <Compile Include="Arithmetical\ReverseInt\ReverseInt.cs" />
     <Compile Include="Arithmetical\ReverseString\ReverseString.cs" />
     <Compile Include="Arithmetical\SubsetsSum\SubsetsSum.cs" />
@@ -68,6 +67,7 @@
     <Compile Include="Arrays\MaximalConsecutiveSequence\MaximalConsecutiveSequence.cs" />
     <Compile Include="Arrays\MaximalSequenceOfIncreasingIntegers\MaximalSequenceOfIncreasingIntegers.cs" />
     <Compile Include="Arrays\QuantityOfDuplicates\QuantityOfDuplicates.cs" />
+    <Compile Include="Arrays\ReverseArray\ReverseArray.cs" />
     <Compile Include="Arrays\SpiralMatrix\SpiralMatrix.cs" />
     <Compile Include="Arrays\SquareMatrix2\SquareMatrix2.cs" />
     <Compile Include="Arrays\SquareMatrix3\SquareMatrix3.cs" />
