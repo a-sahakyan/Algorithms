@@ -112,6 +112,7 @@
     <Compile Include="SortAlgorithms\BinarySearcher\BinarySearcher.cs" />
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
     <Compile Include="SortAlgorithms\SelectionSorter\SelectionSorter.cs" />
+    <Compile Include="Strings\Casing\Casing.cs" />
     <Compile Include="Strings\ReverseString\ReverseString.cs" />
     <Compile Include="Strings\StringsSum\StringsSum.cs" />
     <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
