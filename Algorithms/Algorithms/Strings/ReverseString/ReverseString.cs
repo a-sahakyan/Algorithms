@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.Arithmetical.ReverseString
+namespace Algorithms.Strings.ReverseString
 {
     class ReverseString
     {

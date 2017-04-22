@@ -60,8 +60,6 @@
     <Compile Include="Arithmetical\Palindrome\Palindrome.cs" />
     <Compile Include="Arithmetical\Prime\Prime.cs" />
     <Compile Include="Arithmetical\ReverseInt\ReverseInt.cs" />
-    <Compile Include="Arithmetical\ReverseString\ReverseString.cs" />
-    <Compile Include="Arithmetical\StringsSum\StringsSum.cs" />
     <Compile Include="Arithmetical\SubsetsSum\SubsetsSum.cs" />
     <Compile Include="Arithmetical\Sum\CalculateSum.cs" />
     <Compile Include="Arithmetical\Sum\Sum.cs" />
@@ -114,6 +112,8 @@
     <Compile Include="SortAlgorithms\BinarySearcher\BinarySearcher.cs" />
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
     <Compile Include="SortAlgorithms\SelectionSorter\SelectionSorter.cs" />
+    <Compile Include="Strings\ReverseString\ReverseString.cs" />
+    <Compile Include="Strings\StringsSum\StringsSum.cs" />
     <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
   </ItemGroup>
   <ItemGroup>
