@@ -22,7 +22,7 @@ In many cases, there are multiple ways to perform a specific operation within a 
 
 [SortAlgorithms](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/SortAlgorithms)
 
-[Strings](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Strings/SubstringsCount)
+[Strings](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Strings)
 
 # Updates will be soon.
 
