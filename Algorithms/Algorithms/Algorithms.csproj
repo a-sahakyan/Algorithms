@@ -114,6 +114,7 @@
     <Compile Include="SortAlgorithms\BinarySearcher\BinarySearcher.cs" />
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
     <Compile Include="SortAlgorithms\SelectionSorter\SelectionSorter.cs" />
+    <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
