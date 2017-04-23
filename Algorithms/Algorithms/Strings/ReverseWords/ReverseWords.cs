@@ -8,10 +8,11 @@ namespace Algorithms.Strings.ReverseWords
 {
     class ReverseWords
     {
-        public void Reverse()
+        /// <summary>
+        /// Reverses the words in a given sentence without changing punctuation and spaces.
+        /// </summary>
+        public void Reverse(string text)
         {
-            string text = "C# is not C++ and PHP is not Delphi";
-
             string[] words = text.Split(' ');
 
             for (int i = 0; i < words.Length / 2; i++)
