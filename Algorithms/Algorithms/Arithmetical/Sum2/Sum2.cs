@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.Arithmetical.Sum
+namespace Algorithms.Arithmetical.Sum2
 {
-    class CalculateSum
+    class Sum2
     {
         /// <summary>
         /// Calculate Sum of array

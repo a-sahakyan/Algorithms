@@ -61,7 +61,7 @@
     <Compile Include="Arithmetical\Prime\Prime.cs" />
     <Compile Include="Arithmetical\ReverseInt\ReverseInt.cs" />
     <Compile Include="Arithmetical\SubsetsSum\SubsetsSum.cs" />
-    <Compile Include="Arithmetical\Sum\CalculateSum.cs" />
+    <Compile Include="Arithmetical\Sum2\Sum2.cs" />
     <Compile Include="Arithmetical\Sum\Sum.cs" />
     <Compile Include="Arithmetical\SwapNumbers\SwapNumbers.cs" />
     <Compile Include="Arrays\AlphabeticalOrder\AlphabeticalOrder.cs" />
