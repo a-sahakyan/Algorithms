@@ -112,6 +112,7 @@
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
     <Compile Include="SortAlgorithms\SelectionSorter\SelectionSorter.cs" />
     <Compile Include="Strings\Casing\Casing.cs" />
+    <Compile Include="Strings\CountOfDuplicates\CountOfDuplicates.cs" />
     <Compile Include="Strings\Palindrome\Palindrome.cs" />
     <Compile Include="Strings\ReverseString\ReverseString.cs" />
     <Compile Include="Strings\ReverseWords\ReverseWords.cs" />
