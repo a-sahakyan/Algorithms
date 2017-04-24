@@ -57,7 +57,6 @@
     <Compile Include="Arithmetical\Maximum\Maximum.cs" />
     <Compile Include="Arithmetical\MaxMinValues\MaxMinValues.cs" />
     <Compile Include="Arithmetical\MultiplicationTable\MultiplicationTable.cs" />
-    <Compile Include="Arithmetical\Palindrome\Palindrome.cs" />
     <Compile Include="Arithmetical\Prime\Prime.cs" />
     <Compile Include="Arithmetical\ReverseInt\ReverseInt.cs" />
     <Compile Include="Arithmetical\SubsetsSum\SubsetsSum.cs" />
@@ -113,6 +112,7 @@
     <Compile Include="SortAlgorithms\BubbleSorter\BubbleSorter.cs" />
     <Compile Include="SortAlgorithms\SelectionSorter\SelectionSorter.cs" />
     <Compile Include="Strings\Casing\Casing.cs" />
+    <Compile Include="Strings\Palindrome\Palindrome.cs" />
     <Compile Include="Strings\ReverseString\ReverseString.cs" />
     <Compile Include="Strings\ReverseWords\ReverseWords.cs" />
     <Compile Include="Strings\StringsSum\StringsSum.cs" />
