@@ -121,6 +121,7 @@
     <Compile Include="Strings\RemoveDuplicates\RemoveDuplicates.cs" />
     <Compile Include="Strings\ReverseString\ReverseString.cs" />
     <Compile Include="Strings\ReverseWords\ReverseWords.cs" />
+    <Compile Include="Strings\Dictionary2\Dictionary2.cs" />
     <Compile Include="Strings\StringsSum\StringsSum.cs" />
     <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
   </ItemGroup>
