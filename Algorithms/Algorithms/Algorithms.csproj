@@ -114,6 +114,7 @@
     <Compile Include="Strings\AlphabethicalOrder\AlphabethicalOrder.cs" />
     <Compile Include="Strings\Casing\Casing.cs" />
     <Compile Include="Strings\CountOfDuplicates\CountOfDuplicates.cs" />
+    <Compile Include="Strings\Dictionary\Dictionary.cs" />
     <Compile Include="Strings\ExtractSentence\ExtractSentence.cs" />
     <Compile Include="Strings\NumberOfDays\NumberOfDays.cs" />
     <Compile Include="Strings\Palindrome\Palindrome.cs" />
