@@ -24,7 +24,7 @@ In many cases, there are multiple ways to perform a specific operation within a 
 
 [Strings](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/Strings)
 
-[TextFiles](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/TextFiles/ReadOddLines)
+[TextFiles](https://github.com/SahakyanGit/Algorithms/tree/master/Algorithms/Algorithms/TextFiles)
 
 # Updates will be soon.
 
