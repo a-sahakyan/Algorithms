@@ -124,6 +124,7 @@
     <Compile Include="Strings\Dictionary2\Dictionary2.cs" />
     <Compile Include="Strings\StringsSum\StringsSum.cs" />
     <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
+    <Compile Include="TextFiles\CompareFiles\CompareFiles.cs" />
     <Compile Include="TextFiles\ReadOddLines\ReadOddLines.cs" />
   </ItemGroup>
   <ItemGroup>
