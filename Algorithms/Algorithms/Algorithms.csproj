@@ -127,6 +127,7 @@
     <Compile Include="TextFiles\CompareFiles\CompareFiles.cs" />
     <Compile Include="TextFiles\ReadFile\ReadFile.cs" />
     <Compile Include="TextFiles\ReadOddLines\ReadOddLines.cs" />
+    <Compile Include="TextFiles\RemoveOddLines\RemoveOddLines.cs" />
     <Compile Include="TextFiles\WriteFile\WriteFile.cs" />
   </ItemGroup>
   <ItemGroup>
