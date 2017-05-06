@@ -125,6 +125,7 @@
     <Compile Include="Strings\StringsSum\StringsSum.cs" />
     <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
     <Compile Include="TextFiles\AddLines\AddLines.cs" />
+    <Compile Include="TextFiles\AlphabethicalInFile\AlphabethicalInFile.cs" />
     <Compile Include="TextFiles\CompareFiles\CompareFiles.cs" />
     <Compile Include="TextFiles\ReadFile\ReadFile.cs" />
     <Compile Include="TextFiles\ReadOddLines\ReadOddLines.cs" />
