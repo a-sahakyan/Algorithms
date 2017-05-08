@@ -128,6 +128,7 @@
     <Compile Include="TextFiles\AlphabethicalInFile\AlphabethicalInFile.cs" />
     <Compile Include="TextFiles\CompareFilesRows\CompareFileRows.cs" />
     <Compile Include="TextFiles\CompareFiles\CompareFiles.cs" />
+    <Compile Include="TextFiles\JoinFiles\JoinFiles.cs" />
     <Compile Include="TextFiles\ReadFile\ReadFile.cs" />
     <Compile Include="TextFiles\ReadOddLines\ReadOddLines.cs" />
     <Compile Include="TextFiles\RemoveOddLines\RemoveOddLines.cs" />
