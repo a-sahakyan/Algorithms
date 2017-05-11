@@ -133,6 +133,7 @@
     <Compile Include="TextFiles\ReadOddLines\ReadOddLines.cs" />
     <Compile Include="TextFiles\RemoveOddLines\RemoveOddLines.cs" />
     <Compile Include="TextFiles\ReplaceWord\ReplaceWord.cs" />
+    <Compile Include="TextFiles\WordsCount\WordsCount.cs" />
     <Compile Include="TextFiles\Words\Words.cs" />
     <Compile Include="TextFiles\WriteFile\WriteFile.cs" />
   </ItemGroup>
