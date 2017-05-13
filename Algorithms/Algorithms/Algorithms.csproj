@@ -83,6 +83,7 @@
     <Compile Include="Lists\CheckElement\CheckElement.cs" />
     <Compile Include="Lists\ConvertableList\ConvertableList.cs" />
     <Compile Include="Lists\ElementsCount\ElementsCount.cs" />
+    <Compile Include="Lists\LongestSubsequenceOfEqual\LongestSubsequenceOfEqual.cs" />
     <Compile Include="Lists\PigLatin\PigLatin.cs" />
     <Compile Include="Lists\RectangularFrame\RectangularFrame.cs" />
     <Compile Include="Lists\RemoveMinimal\RemoveMinimal.cs" />
