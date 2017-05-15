@@ -88,6 +88,7 @@
     <Compile Include="Lists\PigLatin\PigLatin.cs" />
     <Compile Include="Lists\RectangularFrame\RectangularFrame.cs" />
     <Compile Include="Lists\RemoveMinimal\RemoveMinimal.cs" />
+    <Compile Include="Lists\RemoveNegative\RemoveNegative.cs" />
     <Compile Include="Lists\RotateElements\RotateElements.cs" />
     <Compile Include="Numeral\ConvertToBinary\ConvertToBinary.cs" />
     <Compile Include="Numeral\ConvertToDecimal\ConvertToDecimal.cs" />
