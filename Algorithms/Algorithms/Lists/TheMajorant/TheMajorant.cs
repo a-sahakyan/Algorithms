@@ -16,10 +16,7 @@ namespace Algorithms.Lists.TheMajorant
         /// </summary>
         public void GetMajorant()
         {
-            SortList();
-
             List<List<int>> jaggedList = new List<List<int>>();
-
             SortList();
 
             int count = 0;
