@@ -127,6 +127,7 @@
     <Compile Include="Strings\ReverseString\ReverseString.cs" />
     <Compile Include="Strings\ReverseWords\ReverseWords.cs" />
     <Compile Include="Strings\Dictionary2\Dictionary2.cs" />
+    <Compile Include="Strings\StringBuilderExtensions\StringBuilderExtensions.cs" />
     <Compile Include="Strings\StringsSum\StringsSum.cs" />
     <Compile Include="Strings\SubstringsCount\SubstringsCount.cs" />
     <Compile Include="TextFiles\AddLines\AddLines.cs" />
